@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #262626;
+    color: #D9D9D9;
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 594px;
+    padding-top: 73px;
+    padding-right: 57px;
+    padding-bottom: 73px;
+    padding-left: 57px;
+    gap: 36px;
+
+}
+header{
+    width: 352px;
+    height: 144px;
+    gap: 20px;
+}
+.title{
+    width: 352px;
+    height: 36px;
+    font-family: Hanken Grotesk;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #8E8E8E;
+    text-align: center;
+}
+.title h2{
+    color: #D9D9D9;
+}
+.notifications{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+aside{
+    width: 350px;
+    height: 52px;
+    gap: 1.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+aside span{
+    height: 25px;
+    border-radius: 3px;
+    padding: 5px;
+    gap: 5px;
+    width: fit-content;
+}
+.html{background-color: #E2680F;}
+.css{background: #328AF1;}
+.js,.py{background: #F4EB13; color: #262626;}
+.react{background: #2ED3E9;color: #262626;}
+.ts{background: #298EC6;}
+.node{background: #599137;}
+.ruby{background: #D02B2B;}
+.assembly{background: #2D519F;}
+.input{
+    width: 334;
+    height: 40;
+    gap: 2px;
+    display: flex;
+}
+.input p{
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border-bottom-width: 1px;
+    background: #323232;
+    border-bottom: 1px solid #F9F4DA;
+}
+.keybord{
+    width: 480px;
+    height: 164px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btnKey{
+    width: 40px;
+    height: 40px;
+    gap: 6px;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 6px;
+    border: 1px solid #D7D7D7;
+    background: #FCBA29;
+
+
+}
