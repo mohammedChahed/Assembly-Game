@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -12,13 +13,25 @@ body {
     display: flex;
     justify-content: center;
 }
+main{
+    width: 594px;
+    height: 760px;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+
+}
 #root{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 594px;
-    padding-top: 73px;
+    padding-top: 50px;
     padding-right: 57px;
     padding-bottom: 73px;
     padding-left: 57px;
@@ -27,28 +40,31 @@ body {
 }
 header{
     width: 352px;
-    height: 144px;
+    height: 145px;
     gap: 20px;
 }
 .title{
     width: 352px;
-    height: 36px;
+    height: 60px;
     font-family: Hanken Grotesk;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
     color: #8E8E8E;
     text-align: center;
+    
 }
 .title h2{
     color: #D9D9D9;
+    margin-bottom: 6px;
 }
-.notifications{
-    font-weight: 400;
-    font-style: italic;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
+.status{
+    width: 352px;
+    height: 70px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    background: #10A95B;
     text-align: center;
 }
 aside{
@@ -66,27 +82,24 @@ aside span{
     gap: 5px;
     width: fit-content;
 }
-.html{background-color: #E2680F;}
-.css{background: #328AF1;}
-.js,.py{background: #F4EB13; color: #262626;}
-.react{background: #2ED3E9;color: #262626;}
-.ts{background: #298EC6;}
-.node{background: #599137;}
-.ruby{background: #D02B2B;}
-.assembly{background: #2D519F;}
-.input{
-    width: 334;
-    height: 40;
+
+.letters{
+    width: 334px;
+    height: 40px;
     gap: 2px;
     display: flex;
 }
-.input p{
+.letters p{
     width: 40px;
     height: 40px;
     padding: 6px;
     border-bottom-width: 1px;
     background: #323232;
     border-bottom: 1px solid #F9F4DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .keybord{
     width: 480px;
@@ -96,7 +109,7 @@ aside span{
     flex-wrap: wrap;
     justify-content: center;
 }
-.btnKey{
+.keybord button{
     width: 40px;
     height: 40px;
     gap: 6px;
@@ -105,6 +118,23 @@ aside span{
     padding: 6px;
     border: 1px solid #D7D7D7;
     background: #FCBA29;
-
-
+    cursor: pointer;
+}
+.newgame{
+    width: 228px;
+    height: 40px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    border-radius: 4px;
+    border-width: 1px;
+    background: #11B5E5;
+    border: 1px solid #D7D7D7;
+}
+button.correct{
+    background-color: #10A95B;
+}
+button.wrong{
+    background-color: #EC5D49;
 }
