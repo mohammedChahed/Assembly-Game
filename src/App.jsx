@@ -10,22 +10,26 @@ function App() {
 
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
     
+    const wrongGuessCount = guessedLetters.filter(letter => !currentWord.includes(letter)).length ;
+    console.log(wrongGuessCount)
+    
     function addGuessedLetters(letter) {
         setGuessedLetters(prevLetters => 
             prevLetters.includes(letter) ? prevLetters : [...prevLetters , letter]
        )
     }
 
-    console.log(guessedLetters)
-
-    const langagueElement = languages.map(lang => {
+    const langagueElement = languages.map((lang,index) => {
+        const isLanguageLost = index < wrongGuessCount ;
         const style={
             backgroundColor : lang.backgroundColor ,
             color : lang.color
         }
+
+        
         return (
             <span
-                className=""
+                className={`chip ${isLanguageLost ? 'lost' : ""}` }
                 style={style}
                 key={lang.name}
             
@@ -37,7 +41,9 @@ function App() {
 
     const letterElement = currentWord.split("").map((letter,index) => {
         return(
-            <p key={index}> {letter.toUpperCase()} </p>
+            <p key={index}> 
+                {guessedLetters.includes(letter) ? letter.toUpperCase() : ""}
+            </p>
         );
     })
 
