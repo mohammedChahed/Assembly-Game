@@ -55,11 +55,21 @@ function App() {
     })
     
     const letterElement = currentWord.split("").map((letter,index) => {
-        return(
-            <p key={index}> 
-                {guessedLetters.includes(letter) ? letter.toUpperCase() : ""}
-            </p>
-        );
+        
+            if(isGameLost){
+                return(
+                    <p key={index}> 
+                        {letter.toUpperCase()}
+                    </p>
+                );
+            }else{
+                return(
+                    <p key={index}> 
+                        {guessedLetters.includes(letter) ? letter.toUpperCase() : ""}
+                    </p>
+                );
+            }
+        ;
     })
 
     const keyboardElements = alphabet.split("").map((letter,index) =>{
