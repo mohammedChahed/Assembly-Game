@@ -1,16 +1,36 @@
-# React + Vite
+# 🧩 Assembly EndGame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assembly EndGame is a fun word-guessing game inspired by classic hangman-style games, with a programming twist.  
+Your mission is to guess the hidden programming-related word in **under 8 attempts** and save the programming world from **Assembly** 🧠💻
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## React Compiler
+👉 **Play the game here:**  
+**[[https://your-website-link-here.com](https://assembly-game-black.vercel.app/)**  
+> 🔹 Replace this link with your deployed website (Netlify, Vercel, GitHub Pages, etc.)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎮 Game Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔤 Interactive on-screen keyboard (A–Z)
+- ⏱️ Limited attempts (8 tries)
+- 🧠 Programming-themed words (HTML, CSS, JavaScript, React, etc.)
+- 🎨 Clean and modern dark UI
+- 📱 Responsive design (works on desktop & mobile)
+- ⚡ Fast and lightweight
+
+---
+
+## 🛠️ Built With
+
+- **HTML** – Structure
+- **CSS** – Styling and layout
+- **JavaScript** / **React** – Game logic and interactivity  
+  *(Update this section if you used a specific framework)*
+
+---
+
+   git clone https://github.com/your-username/assembly-endgame.git
