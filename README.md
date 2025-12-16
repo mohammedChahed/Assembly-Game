@@ -8,7 +8,7 @@ Your mission is to guess the hidden programming-related word in **under 8 attemp
 ## 🌐 Live Demo
 
   
-**[👉 **Play the game here:**](https://assembly-game-black.vercel.app/)**  
+**[👉 **Click to Play The Game**](https://assembly-game-black.vercel.app/)**  
 > 🔹 Replace this link with your deployed website (Netlify, Vercel, GitHub Pages, etc.)
 
 ---
